@@ -1,0 +1,23 @@
+{
+    "name":"menatwork/maw-media-sftp",
+    "type": "shopware-frontend-plugin",
+    "description": "Menatwork media adapter to store media files via SFTP.",
+    "comment": "league/flysystem and guzzlehttp/guzzle are provided by shopware",
+    "keywords": ["shopware", "sftp"],
+    "replace": {
+        "league/flysystem": "~1.0",
+        "guzzlehttp/guzzle": "~5.3.1"
+    },
+    "extra": {
+        "installer-name": "MawMediaSftp"
+    },
+    "config": {
+    	"optimize-autoloader": true
+    },
+    "archive": {
+    	"exclude": ["/davidmaack-maw-media-sftp-*.*", "/.git", "/.gitignore", "!/vendor"]
+    },
+    "require": {
+        "league/flysystem-sftp": "^1.0"
+    }
+}
